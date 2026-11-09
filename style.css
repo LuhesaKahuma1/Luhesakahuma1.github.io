@@ -163,4 +163,81 @@ h1 em, h2 em { color: var(--green); font-style: normal; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}.theme-toggle {
+  align-items: center;
+  background: transparent;
+  border: 1px solid rgba(183, 238, 120, .5);
+  border-radius: 4px;
+  color: var(--green);
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-size: .75rem;
+  gap: 8px;
+  padding: 8px 11px;
+}
+.theme-toggle:hover {
+  background: rgba(183, 238, 120, .1);
+}
+
+html[data-theme="dark"] body {
+  --paper: #101a1e;
+  --white: #172328;
+  --ink: #edf2eb;
+  --muted: #aab8b3;
+  --line: #2b393a;
+  background: var(--paper);
+  color: var(--ink);
+}
+html[data-theme="dark"] .announcement {
+  background: #243525;
+  color: #d8f6bb;
+}
+html[data-theme="dark"] .site-header {
+  background: #081116;
+}
+html[data-theme="dark"] .value-strip,
+html[data-theme="dark"] .product-card,
+html[data-theme="dark"] .content-card {
+  background: #172328;
+  border-color: #2b393a;
+}
+html[data-theme="dark"] .value-strip b,
+html[data-theme="dark"] .product-card h3,
+html[data-theme="dark"] .price,
+html[data-theme="dark"] .content-card h2,
+html[data-theme="dark"] .content-card h3,
+html[data-theme="dark"] .page-heading h1,
+html[data-theme="dark"] .section-heading h2 {
+  color: #edf2eb;
+}
+html[data-theme="dark"] .value-strip small,
+html[data-theme="dark"] .product-description,
+html[data-theme="dark"] .content-card p,
+html[data-theme="dark"] .content-card li,
+html[data-theme="dark"] .section-heading > p,
+html[data-theme="dark"] .page-heading > p:last-child {
+  color: #aab8b3;
+}
+html[data-theme="dark"] .product-bottom {
+  border-color: #2b393a;
+}
+html[data-theme="dark"] .editorial-band {
+  background: #1b2926;
+}
+html[data-theme="dark"] .editorial-band h2 {
+  color: #edf2eb;
+}
+html[data-theme="dark"] .editorial-band > p {
+  color: #b6c2bb;
+}
+html[data-theme="dark"] .featured-card {
+  border-color: #78964f;
+}
+html[data-theme="dark"] .button-small {
+  background: var(--green);
+  color: #101a1e;
+}
+html[data-theme="dark"] .button-small:hover {
+  background: #cef99a;
 }
