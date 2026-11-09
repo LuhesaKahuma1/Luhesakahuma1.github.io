@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://luhesakahuma1.github.io/Luhesakahuma/sitemap.xml
